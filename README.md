@@ -13,7 +13,6 @@
 **爬虫框架**
 
 1. **提供网页url**：url选择非触屏手机网页版weibo，因为电脑版网页及手机触屏版网页使用javascript动态网页，需要使用selenium爬取。为了方便操作，优先选择只需requests就可爬取的非触屏手机网页版。
-<br>
 
 ```python 
 user = 'yesung'
@@ -23,7 +22,6 @@ maxp = 212
 
 2. **获取网页源代码**：使用requests module中的Session.get，提供自己的微博cookie，模拟真实浏览器操作。
 3. **网页存储**：将所有网页以f'{user} {page}.html'的形式存储到'\\user\\user grab time'的文件夹里。其中user grab time的文件夹创立是为了分别针对同一用户在不同时间点做出的多次爬取，比如当需要分析该用户在一段时间内粉丝，或某微博的转赞评涨幅（“发大水”程度）时。
-<br>
 
 ```python
 def store_user_pages(user_name, user_url, maxp, minp = 1):
@@ -68,7 +66,6 @@ def store_user_pages(user_name, user_url, maxp, minp = 1):
 ```
 
 4. **读取网页**：既然网页存在不同的文件夹里，则读取网页时必须首先使用get_folders()确定有哪些可选的文件夹，选定一个文件夹`folder_idx`，再读取其中的全部。
-<br>
 
 ```python
 def get_folders(user):
