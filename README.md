@@ -6,6 +6,7 @@
 
 - **微博分析** ：待开展，预计以@yesung110684（Super Junior - 艺声）的数据为示例，分析yesung发博的密集时间段，提及队友次数，转赞评变化等。
 
+![清晰后的微博内容](https://i.loli.net/2020/10/20/eW4myFYiKRj59kA.png)
 
 
 ## 微博爬虫
@@ -233,4 +234,6 @@ folder_idx = 0 # you choose
         with open(file_location + '\\data dictionary.txt') as f:
             f.write(get_data_dictionary()) # 保存数据词典
     ```
+    
+    ![清晰后的微博内容](https://i.loli.net/2020/10/20/eW4myFYiKRj59kA.png)
 
